@@ -1,0 +1,42 @@
+---
+import MainButton from "../../../ui/MainButton.astro";
+import { Icons } from "../../../ui/Icons.jsx";
+
+interface Product {
+  name: string;
+}
+
+const { title, products, price } = Astro.props as {
+  title: string;
+  products: Product[];
+  price: number;
+};
+---
+
+<article
+  class="flex flex-col items-center bg-gray-100 w-88 h-auto p-6 pt-10 rounded-lg space-y-10 hover:scale-110 transition duration-300 hover:bg-blue-200 shadow-lg py-8"
+>
+  <section class="flex flex-col text-center space-y-1">
+    <h2 class="text-2xl font-bold tracking-tight text-gray-900">
+      {title ?? "Title"}
+    </h2>
+    <p class="text-[#007cff] text-xl font-bold">{price}</p>
+    <p class="text-slate-500 text-sm">por sesión</p>
+  </section>
+  <section class="space-y-2">
+    <div class="flex flex-col gap-2 justify-start">
+      {
+        products.map((item) => (
+          <div class="flex items-start gap-2 justify-start">
+            <Icons.Snowflake color="blue" size="20" />
+            <span class="text-slate-500 text-base">{item}</span>
+          </div>
+          // <span class="text-slate-500 text-base">{item}</span>
+        ))
+      }
+    </div>
+  </section>
+  <section class="flex w-full flex-col px-10 mt-auto">
+    <MainButton>Agendar Taller</MainButton>
+  </section>
+</article>

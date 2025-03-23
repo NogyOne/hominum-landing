@@ -1,0 +1,56 @@
+---
+import PriceCard from "./ProgramsComponents/PriceCard.astro";
+
+const PRICES = [
+  {
+    title: "Beginner",
+    products: [
+      "Introducción Guiada a Inmersión de Hielo",
+      "Instrucciones de técnica de respiración",
+      "Inmersión de Hielo de 5 minutos",
+    ],
+    price: "$99",
+  },
+  {
+    title: "Empresarial",
+    products: [
+      "Meditación Guiada de Relajación",
+      "Introducción Guiada a Inmersion de Hielo",
+      "Instrucciones de técnica de respiración",
+      "Inmersión de Hielo de 10 minutos",
+      "Sesión de Preguntas y Respuestas",
+    ],
+    price: "$199",
+  },
+  {
+    title: "Familiar",
+    products: [
+      "Meditación Guiada de Relajación",
+      "Introducción Guiada a Inmersion de Hielo",
+      "Instrucciones de técnica de respiración",
+      "Inmersión de Hielo de 15 minutos",
+      "Sesión de Preguntas y Respuestas",
+      "Sesión de Fotos",
+    ],
+    price: "$299",
+  },
+];
+---
+
+<section class="" id="programs">
+  <div class="text-center mb-12">
+    <h2
+      class="text-2xl md:text-3xl font-bold tracking-tight sm:text-4xl text-gray-900"
+    >
+      Nuestros Talleres de Inmersión de Hielo
+    </h2>
+    <p class="text-md md:text-lg text-gray-600 max-w-2xl mx-auto mt-4">
+      Elige el programa que mejor se ajuste a tus metas y necesidades.
+    </p>
+  </div>
+  <div
+    class="grid md:grid-cols-2 lg:grid-cols-3 justify-items-center lg:px-52 grid-cols-1 gap-6"
+  >
+    {PRICES.map((item) => <PriceCard {...item} />)}
+  </div>
+</section>

@@ -1,0 +1,56 @@
+---
+import HamburgerMenu from "./HamburgerMenu";
+
+const NAVLINKS = [
+  {
+    title: "Beneficios",
+    href: "#benefits",
+  },
+  {
+    title: "Talleres",
+    href: "#programs",
+  },
+  // {
+  //   title: "Contacto",
+  //   alt: "contact",
+  //   href: "#contact",
+  // },
+  {
+    title: "Testimonios",
+    href: "#testimonies",
+  },
+  // {
+  //   title: "Conocenos",
+  //   href: "#contact",
+  // },
+];
+---
+
+<nav class="w-full px-10 py-6 fixed z-50 bg-white shadow-lg">
+  <div class="container flex items-top lg:items-center justify-between mx-auto">
+    <!-- Logo -->
+    <a href="#home">
+      <img
+        src="/logo/logo-hominum.png"
+        alt="logo"
+        class="w-32 duration-100 transform hover:scale-110"
+      />
+    </a>
+
+    <!-- Menú Desktop -->
+    <ul class="hidden md:flex gap-8 text-black cursor-pointer ml-auto">
+      {
+        NAVLINKS.map((item) => (
+          <li>
+            <a href={item.href} class="underline-animation">
+              <span>{item.title}</span>
+            </a>
+          </li>
+        ))
+      }
+    </ul>
+
+    <!-- Botón Hamburguesa-->
+    <HamburgerMenu client:visible NAVLINKS={NAVLINKS} />
+  </div>
+</nav>

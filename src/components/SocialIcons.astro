@@ -1,0 +1,31 @@
+---
+import facebookIcon from "../../public/icons/facebook.svg?raw";
+import instagramIcon from "../../public/icons/instagram.svg?raw";
+import mailIcon from "../../public/icons/mail-icon.svg?raw";
+import Icon from "../components/Icon.astro";
+
+const ICONS = [
+  {
+    icon: facebookIcon,
+    ref: "https://www.facebook.com/Hom1num",
+  },
+  {
+    icon: instagramIcon,
+    ref: "https://www.instagram.com/hominumson/",
+  },
+  {
+    icon: mailIcon,
+    ref: "mailto:hominum@gmail.com",
+  },
+];
+---
+
+<div class="flex gap-4 items-center justify-left text-zinc-400">
+  {
+    ICONS.map((icon) => (
+      <Icon ref={icon.ref}>
+        <Fragment set:html={icon.icon} />
+      </Icon>
+    ))
+  }
+</div>

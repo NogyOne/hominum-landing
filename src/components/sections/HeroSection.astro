@@ -1,0 +1,35 @@
+---
+import MainButton from "../../components/ui/MainButton.astro";
+import SecondaryButton from "../../components/ui/SecondaryButton.astro";
+---
+
+<section
+  class="relative h-[800px] flex items-center justify-start text-white shadow-lg w-full"
+  id="home"
+>
+  <div
+    class="absolute inset-0 bg-contain md:bg-cover bg-center bg-fixed bg-[url('/imgs/banner.png')] mx-auto"
+  >
+  </div>
+
+  <div
+    class="relative z-10 text-left w-full md:w-200 drop-shadow-3xl shadow-black md:pl-20 p-10 md:p-20 md:rounded-r-full bg-gray-500/95"
+  >
+    <h1 class="text-4xl font-bold md:text-5xl">
+      Guiando <span>cuerpo</span> y <span>mente</span> a su máximo potencial
+    </h1>
+    <p class="mt-4 mb-6 text-xl text-gray-300">
+      Inmersión de Hielo y Meditaciones Guiadas
+    </p>
+    <div class="flex gap-4 flex-col md:flex-row">
+      <MainButton> Agendar Taller </MainButton>
+      <SecondaryButton href={"#benefits"}> Conocer Beneficios </SecondaryButton>
+    </div>
+  </div>
+</section>
+
+<style>
+  span {
+    color: #00d8ff;
+  }
+</style>
