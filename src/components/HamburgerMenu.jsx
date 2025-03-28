@@ -12,7 +12,7 @@ export default function HamburgerMenu({ NAVLINKS }) {
   const closeAfterClick = () => {
     setTimeout(() => {
       setIsOpen(false);
-    }, 700);
+    }, 500);
   };
 
   const variants = {
