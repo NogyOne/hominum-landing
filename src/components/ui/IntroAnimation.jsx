@@ -11,7 +11,7 @@ export default function IntroAnimation({ onComplete }) {
       setIsVisible(false);
       if (onComplete) onComplete();
       document.body.style.overflow = "auto";
-    }, 2000);
+    }, 3000);
   }, []);
 
   return (
