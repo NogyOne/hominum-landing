@@ -5,39 +5,39 @@ import CarouselCard from "./CarouselCard.jsx";
 
 const pictures = [
   {
-    imageRoute: "/carousel-imgs/cp-1.jpg",
+    imageRoute: "/carousel-imgs/cp-1.webp",
     alt: "Photo by Hominum",
   },
   {
-    imageRoute: "/carousel-imgs/cp-2.jpg",
+    imageRoute: "/carousel-imgs/cp-2.webp",
     alt: "Photo by Hominum",
   },
   {
-    imageRoute: "/carousel-imgs/cp-3.jpg",
+    imageRoute: "/carousel-imgs/cp-3.webp",
     alt: "Photo by Hominum",
   },
   {
-    imageRoute: "/carousel-imgs/cp-4.jpg",
+    imageRoute: "/carousel-imgs/cp-4.webp",
     alt: "Photo by Hominum",
   },
   {
-    imageRoute: "/carousel-imgs/cp-5.jpg",
+    imageRoute: "/carousel-imgs/cp-5.webp",
     alt: "Photo by Hominum",
   },
   {
-    imageRoute: "/carousel-imgs/cp-6.jpg",
+    imageRoute: "/carousel-imgs/cp-6.webp",
     alt: "Photo by Hominum",
   },
   {
-    imageRoute: "/carousel-imgs/cp-7.jpg",
+    imageRoute: "/carousel-imgs/cp-7.webp",
     alt: "Photo by Hominum",
   },
   {
-    imageRoute: "/carousel-imgs/cp-8.jpg",
+    imageRoute: "/carousel-imgs/cp-8.webp",
     alt: "Photo by Hominum",
   },
   {
-    imageRoute: "/carousel-imgs/cp-9.jpg",
+    imageRoute: "/carousel-imgs/cp-9.webp",
     alt: "Photo by Hominum",
   },
 ];
