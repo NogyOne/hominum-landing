@@ -10,7 +10,7 @@ import IntroAnimation from "../components/ui/IntroAnimation";
 ---
 
 <Layout>
-  <IntroAnimation client:only="react" onComplete={false} />
+  <IntroAnimation client:only="load" onComplete={false} />
   <HeroSection />
 
   <SectionContainer>
@@ -18,7 +18,7 @@ import IntroAnimation from "../components/ui/IntroAnimation";
   </SectionContainer>
 
   <SectionContainer>
-    <Carousel client:only="react" />
+    <Carousel client:only="load" />
   </SectionContainer>
 
   <SectionContainer>
