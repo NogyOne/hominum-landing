@@ -5,10 +5,13 @@ export default function IntroAnimation({ onComplete }) {
   const [isVisible, setIsVisible] = useState(true);
 
   useEffect(() => {
+    document.body.style.overflow = "hidden";
+
     setTimeout(() => {
       setIsVisible(false);
       if (onComplete) onComplete();
-    }, 3000);
+      document.body.style.overflow = "auto";
+    }, 2000);
   }, []);
 
   return (
@@ -28,7 +31,7 @@ export default function IntroAnimation({ onComplete }) {
           }}
         >
           <img
-            src="./logo/logo-hominum.png"
+            src="./logo/logo-hominum.webp"
             alt="hominum-logo"
             className="w-80"
           />
