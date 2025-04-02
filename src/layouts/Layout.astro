@@ -1,7 +1,6 @@
 ---
 import "../styles/global.css";
 import Navbar from "../components/Navbar.astro";
-import { ClientRouter } from "astro:transitions";
 ---
 
 <!doctype html>
@@ -11,8 +10,36 @@ import { ClientRouter } from "astro:transitions";
     <meta name="viewport" content="width=device-width" />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <meta name="generator" content={Astro.generator} />
-    <title>Hominum</title>
-    <ClientRouter />
+    <title>Hominum - Inmersión en Hielo: Taller "Vence tus Límites"</title>
+
+    <meta
+      name="description"
+      content="En Hominum ofrecemos talleres de Inmersión en Hielo, Respiración Consciente y Meditación. Te acompañamos a conectar con tu cuerpo y mente, a través de la práctica de la respiración consciente y el frío."
+    />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@hominumson" />
+    <meta name="twitter:creator" content="@hominumson" />
+    <meta
+      name="twitter:title"
+      content="Hominum - Inmersión en Hielo y Meditación Guiada"
+    />
+    <meta
+      name="twitter:description"
+      content="En Hominum ofrecemos talleres de Inmersión en Hielo, Respiración Consciente y Meditación. Te acompañamos a conectar con tu cuerpo y mente, a través de la práctica de la respiración consciente y el frío."
+    />
+
+    <meta property="og:url" content="https://hominum-landing.vercel.app/" />
+    <meta property="og:type" content="website" />
+    <meta
+      property="og:title"
+      content="Hominum - Inmersión en Hielo y Meditación Guiada"
+    />
+    <meta property="og:image" content="/imgs/banner.webp" />
+    <meta
+      property="og:description"
+      content="En Hominum ofrecemos talleres de Inmersión en Hielo, Respiración Consciente y Meditación. Te acompañamos a conectar con tu cuerpo y mente, a través de la práctica de la respiración consciente y el frío."
+    />
   </head>
   <body class="relative">
     <Navbar />
